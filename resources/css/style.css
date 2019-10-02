@@ -30,14 +30,9 @@ html {
     margin: 0 auto; 
 }
 
-.section {
+section {
     padding: 80px 0;
 
-}
-
-.section-features {
-    padding-top: 80px;
-    padding-bottom: 80px;
 }
 
 .box {
@@ -135,9 +130,9 @@ h3 {
     font-size: 110%;
     margin-bottom: 15px;
 }
-
+/* ----------------------------------------------------------------- */
 /* PARAGRAPHS */
-
+/* ----------------------------------------------------------------- */
 .long-copy {
     line-height: 145%;
     width: 70%;
@@ -148,9 +143,9 @@ h3 {
     font-size: 90%;
     line-height: 145%;
 }
-
+/* ----------------------------------------------------------------- */
 /* ICONS */
-
+/* ----------------------------------------------------------------- */
 .icon-big {
     font-size: 300%;
     display: block;
@@ -200,15 +195,35 @@ h3 {
     border: 1px solid #17693a;
     color: rgb(209, 209, 209);
 }
-
+/* ----------------------------------------------------------------- */
 /* Features */
-
+/* ----------------------------------------------------------------- */
 .section-features .long-copy {
     margin: 30px;
 }
 
-/* Grid without using CSS Grid ** will update CSS grid style */
+/* ----------------------------------------------------------------- */
+/* Generic Links */
+/* ----------------------------------------------------------------- */
 
+a:link,
+a:active {
+    color: #27ae60;
+    text-decoration: none;
+    border-bottom: 1px solid #17693a;
+    padding: 1px;
+}
+
+a:hover,
+a:visited {
+    color: #17693a;
+    border-bottom: 1px solid #17693b00;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+/* ----------------------------------------------------------------- */
+/* Grid without using CSS Grid ** will update CSS grid style */
+/* ----------------------------------------------------------------- */
 .section-meals {
     padding: 0;
     padding-bottom: 80px;
@@ -246,9 +261,9 @@ h3 {
     transform: scale(1.03);
 
 }
-
+/* ----------------------------------------------------------------- */
 /* How it works section */
-
+/* ----------------------------------------------------------------- */
 .hiw-section {
     background-color: #f4f4f4;
 }
@@ -290,8 +305,83 @@ h3 {
     margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+    border-bottom: 0px;
+}
+
 .btn-app img {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+/* ----------------------------------------------------------------- */
+/* CITIES*/
+/* ----------------------------------------------------------------- */
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #17693a;
+    font-size: 120%;
+    margin-right: 10px;
+    /*Align text and icons using css grid/flexbox or */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+/* ----------------------------------------------------------------- */
+/* TESTIE*/
+/* ----------------------------------------------------------------- */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/back-customers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+
+}
+
+blockquote:before {
+    display: block;
+    position: absolute;
+    content: "\201C";
+    font-size: 500%;
+    top: -5px;
+    left: -5px;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite {
+    display: block;
+    font-size: 90%;
+    margin-top: 25px;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
